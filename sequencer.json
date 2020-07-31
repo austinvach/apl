@@ -1,0 +1,27 @@
+{
+    "type": "APLA",
+    "version": "0.8",
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "item": {
+            "type": "Sequencer",
+            "items": [
+                {
+                    "type": "Speech",
+                    "content": "Hi! I'm Alexa."
+                },
+                {
+                    "type": "Silence",
+                    "duration": 500
+                },
+                {
+                    "type": "Speech",
+                    "contentType": "SSML",
+                    "content": "<speak><amazon:effect name=\"whispered\">I'm not a real human.</amazon:effect></speak>"
+                }
+            ]
+        }
+    }
+}

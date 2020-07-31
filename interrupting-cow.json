@@ -1,0 +1,86 @@
+{
+    "type": "APLA",
+    "version": "0.8",
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "item": {
+            "type": "Sequencer",
+            "items": [
+                {
+                    "type": "Speech",
+                    "content": "Want to hear a joke?"
+                },
+                {
+                    "type": "Silence",
+                    "duration": 250
+                },
+                {
+                    "type": "Speech",
+                    "contentType": "SSML",
+                    "content": "<speak><voice name=\"Brian\">Sure</voice></speak>"
+                },
+                {
+                    "type": "Speech",
+                    "content": "Knock knock."
+                },
+                {
+                    "type": "Speech",
+                    "contentType": "SSML",
+                    "content": "<speak><voice name=\"Brian\">Who's there?</voice></speak>"
+                },
+                {
+                    "type": "Speech",
+                    "content": "Interrupting cow."
+                },
+                {
+                    "type": "Mixer",
+                    "items": [
+                        {
+                            "type": "Speech",
+                            "contentType": "SSML",
+                            "content": "<speak><voice name=\"Brian\">Interrupting cow who?</voice></speak>"
+                        },
+                        {
+                            "type": "Sequencer",
+                            "items": [
+                                {
+                                    "type": "Silence",
+                                    "duration": 1000
+                                },
+                                {
+                                    "type": "Speech",
+                                    "contentType": "SSML",
+                                    "content": "<speak><say-as interpret-as=\"interjection\">moo</say-as></speak>"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Silence",
+                    "duration": 1500
+                },
+                {
+                    "type": "Speech",
+                    "content": "Want to hear another?"
+                },
+                {
+                    "type": "Speech",
+                    "contentType": "SSML",
+                    "content": "<speak><voice name=\"Brian\">No!</voice></speak>"
+                },
+                {
+                    "type": "Speech",
+                    "content": "I used to be indecisive. Now I'm not sure."
+                },
+                {
+                    "type": "Speech",
+                    "contentType": "SSML",
+                    "content": "<speak><voice name=\"Brian\">Alexa, stop!</voice></speak>"
+                }
+            ]
+        }
+    }
+}

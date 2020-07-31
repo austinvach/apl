@@ -1,0 +1,13 @@
+{
+    "type": "APLA",
+    "version": "0.8",
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "item": {
+            "type": "Audio",
+            "source": "https://ia802806.us.archive.org/25/items/birdsounds_202001/quiet%20bird.mp3"
+        }
+    }
+}

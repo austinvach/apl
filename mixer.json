@@ -1,0 +1,32 @@
+{
+    "type": "APLA",
+    "version": "0.8",
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "item": {
+            "type": "Mixer",
+            "items": [
+                {
+                    "type": "Speech",
+                    "content": "This sample mixes TTS and a background audio clip."
+                },
+                {
+                    "type": "Audio",
+                    "source": "soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_intro_01",
+                    "filters": [
+                        {
+                            "type": "Volume",
+                            "amount": "20%"
+                        },
+                        {
+                            "type": "FadeIn",
+                            "duration": 1000
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

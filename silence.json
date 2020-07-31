@@ -1,0 +1,26 @@
+{
+    "type": "APLA",
+    "version": "0.8",
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "item": {
+            "type": "Sequencer",
+            "items": [
+                {
+                    "type": "Speech",
+                    "content": "Want to have a staring contest?"
+                },
+                {
+                    "type": "Silence",
+                    "duration": 20000
+                },
+                {
+                    "type": "Speech",
+                    "content": "Did I win?"
+                }
+            ]
+        }
+    }
+}
