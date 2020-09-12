@@ -28,3 +28,8 @@ Want to learn about the APL? The following samples are my own and are provided f
 
 ## APL for Visuals
 Coming Soon
+
+## Full Skill Samples
+[Import to an Alexa-hosted skill](https://developer.amazon.com/en-US/docs/alexa/hosted-skills/alexa-hosted-skills-git-import.html) to get up and running quickly.
+* [APL Audio to Speech](https://github.com/austinvach/apl/tree/master/apl-audio-to-speech) - Demonstrates how to use APL audio response within an APL visual response.
+
