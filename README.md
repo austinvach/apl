@@ -1,12 +1,8 @@
 # Alexa Presentation Language (APL) Samples
 
-Want to learn about the APL? The following samples are my own and are provided for educational purposes only. Please refer to Amazon's technical documentation for official guidance.  
+The following samples are provided for educational purposes only. Refer to Amazon's technical documentation for official guidance.  
 
-**Tech Docs:**
-* [APL for Audio](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apl-for-audio-reference.html)
-* [APL for Visuals](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/understand-apl.html)
-
-## APL for Audio
+## [APL for Audio (APLA)](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apl-for-audio-reference.html)
 **By Component Type:**  
 
 [Audio](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apla-audio.html)
@@ -37,7 +33,7 @@ Want to learn about the APL? The following samples are my own and are provided f
 **Other:**
 * [Interrupting Cow](interrupting-cow.json)
 
-## APL for Visuals
+## [APL for Visuals](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/understand-apl.html)
 Coming Soon
 
 ## Full Skill Samples
