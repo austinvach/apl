@@ -7,21 +7,32 @@ Want to learn about the APL? The following samples are my own and are provided f
 * [APL for Visuals](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/understand-apl.html)
 
 ## APL for Audio
-**By Component Type:**
-* [Audio](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apla-audio.html)
-  * [Uses HTTPS as source](audio-https.json)
-  * [Uses Alexa Skills Kit Sound Library as source](audio-soundbank.json) - Browse the [ASK Sound Library](https://developer.amazon.com/en-US/docs/alexa/custom-skills/ask-soundlibrary.html)
-* [Mixer](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apla-mixer.html)
-  * [Mixes TTS with background audio (also uses filters)](mixer.json)
-* [Selector](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apla-selector.html)
-  * [Plays a single child component](selector.json)
-* [Sequencer](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apla-sequencer.html)
-  * [Plays all child components in sequence](sequencer.json)
-* [Silence](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apla-silence.html)
-  * [Plays... nothing](silence.json)
-* [Speech](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apla-speech.html)
-  * [Uses PlainText content](speech-plaintext.json)
-  * [Uses SSML content](speech-ssml.json)
+**By Component Type:**  
+
+[Audio](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apla-audio.html)
+ * [Uses HTTPS as source](audio-https.json)
+ * [Uses Alexa Skills Kit Sound Library as source](audio-soundbank.json) - Browse the [ASK Sound Library](https://developer.amazon.com/en-US/docs/alexa/custom-skills/ask-soundlibrary.html)  
+ 
+[Mixer](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apla-mixer.html)
+ * [Mixes TTS with background audio (also uses filters)](mixer.json)  
+ 
+[Selector](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apla-selector.html)
+ * [Plays a single child component](selector.json)  
+ 
+[Sequencer](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apla-sequencer.html)
+ * [Plays all child components in sequence](sequencer.json)  
+ 
+[Silence](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apla-silence.html)
+ * [Plays... nothing](silence.json)  
+ 
+[Speech](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apla-speech.html)  
+ * [Uses PlainText content](speech-plaintext.json)
+ * [Uses SSML content](speech-ssml.json)
+
+**By Feature:**  
+
+[Duration Property](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apla-component.html#duration) 
+* [Using a fadeOut with duration : trimToParent](fade-out-trim-to-parent.json)
 
 **Other:**
 * [Interrupting Cow](interrupting-cow.json)
