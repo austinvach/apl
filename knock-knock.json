@@ -1,0 +1,81 @@
+{
+    "type": "APLA",
+    "version": "0.9",
+    "description": "This document demonstrates key components used to create audio responses.",
+    "compositions": {
+        "KnockKnock": {
+            "parameters": [
+                {
+                    "name": "visitor",
+                    "type": "string"
+                },
+                {
+                    "name": "punchline",
+                    "type": "string"
+                }
+            ],
+            "items": [
+                {
+                    "type": "Sequencer",
+                    "items": [
+                        {
+                            "type": "Speech",
+                            "contentType": "SSML",
+                            "content": "<speak><say-as interpret-as='interjection'>knock knock</say-as>.</speak>"
+                        },
+                        {
+                            "type": "Speech",
+                            "contentType": "SSML",
+                            "content": "<speak><voice name='Joey'>Who's There</voice></speak>"
+                        },
+                        {
+                            "type": "Speech",
+                            "contentType": "SSML",
+                            "content": "<speak>${visitor}</speak>"
+                        },
+                        {
+                            "type": "Speech",
+                            "contentType": "SSML",
+                            "content": "<speak><voice name='Joey'>${visitor} who?</voice></speak>"
+                        },
+                        {
+                            "type": "Speech",
+                            "contentType": "SSML",
+                            "content": "<speak>${punchline}</speak>"
+                        },
+                        {
+                            "type": "Silence",
+                            "duration": "500"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "resources": [],
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "item": {
+            "type": "Sequencer",
+            "items": [
+                {
+                    "type": "KnockKnock",
+                    "visitor": "Cereal",
+                    "punchline": "Cereal pleasure to meet you."
+                },
+                {
+                    "type": "KnockKnock",
+                    "visitor": "Alpaca",
+                    "punchline": "Alpaca the trunk, you pack the suitcase."
+                },
+                {
+                    "type": "KnockKnock",
+                    "visitor": "Voodoo",
+                    "punchline": "Voodoo you think you are asking me so many questions?"
+                }
+            ]
+        }
+    }
+}
