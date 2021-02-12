@@ -1,0 +1,59 @@
+{
+    "type": "APLA",
+    "version": "0.91",
+    "resources": [
+        {
+            "number": {
+                "fadeDuration": 500
+            }
+        }
+    ],
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "item": {
+            "type": "Mixer",
+            "items": [
+                {
+                    "type": "Sequencer",
+                    "items": [
+                        {
+                            "type": "Speech",
+                            "content": "In Seattle, it's 48 degrees and rainy. If you're headed outside, I suggest a jacket!"
+                        },
+                        {
+                            "type": "Silence",
+                            "duration": "@fadeDuration"
+                        }
+                    ]
+                },
+                {
+                    "type": "Audio",
+                    "source": "soundbank://soundlibrary/nature/amzn_sfx_rain_03",
+                    "duration": "trimToParent",
+                    "filter": [
+                        {
+                            "type": "Repeat",
+                            "repeatCount": -1
+                        },
+                        {
+                            "type": "FadeIn",
+                            "duration": "@fadeDuration"
+                        },
+                        {
+                            "type": "Volume",
+                            "amount": "20%"
+                        }
+                    ]
+                }
+            ],
+            "filter": [
+                {
+                    "type": "FadeOut",
+                    "duration": "@fadeDuration"
+                }
+            ]
+        }
+    }
+}
